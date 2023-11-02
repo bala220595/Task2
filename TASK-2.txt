@@ -1,0 +1,132 @@
+TASK-2
+
+1.CODE :
+
+import java.util.Scanner;
+public class  Main {
+  public static void main(String[] args) {
+
+    String str = "Radar", reverseStr = "";
+    
+    Scanner sc=new Scanner(System .in);
+    
+    int strLength = str.length();
+
+    for (int i = (strLength - 1); i >=0; --i) {
+      reverseStr = reverseStr + str.charAt(i);
+    }
+
+    if (str.toLowerCase().equals(reverseStr.toLowerCase())) {
+      System.out.println(str + " is a Palindrome String.");
+    }
+    else {
+      System.out.println(str + " is not a Palindrome String.");
+    }
+  }
+}
+OUTPUT:
+
+Radar is a Palindrome String.
+
+2. CODE:
+
+  import java.util.Scanner;
+  public class Main   
+{    
+    public static void main(String[] args) {    
+        String string = "Java";    
+        //Stores the reverse of given string    
+        String reversedStr = "";    
+            
+        //Iterate through the string from last and add each character to variable reversedStr    
+        for(int i = string.length()-1; i >= 0; i--){    
+            reversedStr = reversedStr + string.charAt(i);    
+        }    
+            
+        System.out.println("Original string: " + string);    
+        //Displays the reverse of given string    
+        System.out.println("Reverse of given string: " + reversedStr);    
+    }    
+}  
+
+OUTPUT:
+
+Original string: Java
+Reverse of given string: avaJ
+
+3. CODE:
+
+import java.util.Scanner;
+ 
+public  class Main
+{
+   public static void main(String args[])
+   {
+      int n, num = 1, c, d;
+      Scanner in = new Scanner(System.in);
+      System.out.println("Enter the number of rows of floyd's triangle you want");
+      n = in.nextInt();
+      System.out.println("Floyd's triangle :-");
+      for ( c = 1 ; c <= n ; c++ )
+      {
+         for ( d = 1 ; d <= c ; d++ )
+           {
+              System.out.print(num+" ");
+              num++;
+           }
+          System.out.println();
+      }
+   }
+}
+
+OUTPUT :
+
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+
+7.CODE:
+
+import java.util.Scanner;  
+public class Main  
+{  
+public static void main(String[] args)   
+{  
+int a, b, c, largest, temp;  
+//object of the Scanner class  
+Scanner sc = new Scanner(System.in);  
+//reading input from the user  
+System.out.println("Enter the first number:");  
+a = sc.nextInt();  
+System.out.println("Enter the second number:");  
+b = sc.nextInt();  
+System.out.println("Enter the third number:");  
+c = sc.nextInt();  
+//comparing a and b and storing the largest number in a temp variable  
+temp=a>b?a:b;  
+//comparing the temp variable with c and storing the result in the variable  
+largest=c>temp?c:temp;  
+//prints the largest number  
+System.out.println("The largest number is: "+largest);  
+}  
+} 
+
+INPUT:
+
+1
+5
+4
+
+OUTPUT:
+
+Enter the first number:
+Enter the second number:
+Enter the third number:
+The largest number is: 5
+
+
+
+
+
+
